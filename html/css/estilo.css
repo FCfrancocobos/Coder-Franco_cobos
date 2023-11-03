@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color:rgb(195, 202, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagenes/green-color-gradient-liquid-background-presentation-background-design-suitable-for-website-opening-presentation-background-backdrop-wallpaper-etc-free-photo.jpg);
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+.foto1{
+    width: 50px;
+}
+.foto2{
+    width: 100px;
+}
+
+.p1{
+    color: rgb(2, 2, 4);
+    font-size: 20px;
+    list-style: none;
+    
+    
+}
+.p2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2;
+    padding: 1;
+}
+
+.Logo{
+    
+    width: auto;
+    text-align: center;
+}
+
+nav{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: darkgreen;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    padding: 0.7rem;
+}
+.menu a:hover{
+    background-color: black;
+    color: lawngreen;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 600px ){
+    
+} 
+.contenedor{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: 
+     "header header"
+     "main aside"
+     "footer footer";
+}
+.header{
+    background-color: #7b7b7b;
+    padding:1.2rem;
+    display:flex;
+    grid-area: header;
+    justify-content: space-around;
+    align-items: center;
+}
+.header img{
+    width: 60px;
+    border-radius: 20%;
+}
+.header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.header nav ul li{
+    background-color: #3d3d3d;
+    border-radius: 10px;
+    margin:0 10px;
+}
+.header nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+    border-radius: 10px;
+}
+.header nav li a:hover{
+    background-color: white;
+    color:black;
+}
+.main{
+    background-color: white;
+    padding:1.2rem;
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main h1{
+    text-align: center;
+    padding: 1rem;
+}
+.main .texto{
+    padding: 1rem;
+    display:flex;
+}
+.main .texto p{
+    padding:1rem;
+    line-height: 1.5;
+}
+.main .img{
+   text-align: center;
+   padding: 1rem;
+}
+.main .img img{
+    border-radius: 20px;
+}
+.aside{
+    background-color: #e5e6e6;
+    padding:1.2rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    justify-content: space-between;}
+.aside h2{
+    align-self: center;
+    margin:1rem;}
+.aside .img{
+    align-self: center;
+    margin: 1rem;}
+.aside .img img{
+    border-radius: 20px;
+}
+.footer{
+    background-color: #7b7b7b;
+    padding:1.2rem;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    text-align: center;}
+.footer p{
+    color: white;
+}
+@media screen and (max-width:768px){
+    .contenedor{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        grid-template-areas: 
+         "header"
+         "main" 
+         "aside"
+         "footer";
+    }
+    .header{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header img{
+        margin-bottom: 20px;
+    }
+
+}
