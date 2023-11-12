@@ -21,7 +21,11 @@ h1{
     width: 50px;
 }
 .foto2{
-    width: 100px;
+    width: 200px;
+    line-height: 2;
+    padding: 1;
+    
+
 }
 
 .p1{
@@ -86,7 +90,7 @@ nav{
      "footer footer";
 }
 .header{
-    background-color: #7b7b7b;
+    
     padding:1.2rem;
     display:flex;
     grid-area: header;
@@ -138,13 +142,8 @@ nav{
     padding:1rem;
     line-height: 1.5;
 }
-.main .img{
-   text-align: center;
-   padding: 1rem;
-}
-.main .img img{
-    border-radius: 20px;
-}
+
+
 .aside{
     background-color: #e5e6e6;
     padding:1.2rem;
@@ -155,12 +154,8 @@ nav{
 .aside h2{
     align-self: center;
     margin:1rem;}
-.aside .img{
-    align-self: center;
-    margin: 1rem;}
-.aside .img img{
-    border-radius: 20px;
-}
+
+
 .footer{
     background-color: #7b7b7b;
     padding:1.2rem;

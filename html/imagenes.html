@@ -3,53 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--link a estilo propio-->
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Imagenes</title>
 </head>
 
 <body>
-    <header>
-        <nav class="menu-bar">
-            <ul>
-                <li>
-                    <h3><a href="../index.html"class="menu-boton">Inicio</a></h3>
-                </li>
-                <li>
-                    <h3><a href="./acerca-de-nosotros.html"class="menu-boton">Acerca de Nosotros</a></h3>
-                </li>
-                <li>
-                    <h3><a href="./lugares-para-conocer.html"class="menu-boton">Lugares para Conocer</a></h3>
-                </li>
-                <li>
-                    <h3><a href="./imagenes.html"class="menu-boton">Imagenes</a></h3>
-                </li>
-                <li>
-                    <h3> <a href="./eventos-en-temporada.html"class="menu-boton">eventos-en-temporada</a></h3>
-                </li>
-            </ul>
-        </nav>
+    <div class="contenedor">
+        <header class="header">
+            <img src="./imagenes/07a7245e235091de28add10f94a3a239.jpg" alt="Logo"></div>
 
- <img src="./imagenes/WhatsApp Image 2023-10-08 at 20.50.16.jpeg" alt="Foto de Perfil" width="500p">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./imagenes/07a7245e235091de28add10f94a3a239.jpg" width="60px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./acerca-de-nosotros.html">Acerca de Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./lugares-para-conocer.html">Lugares Para Conocer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./imagenes.html">Imagenes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./eventos-en-temporada.html">Eventos en Temporada</a>
+                     
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+    
+        
+
+ 
         <center>
-        <h1>Brisa de Montaña</h1>
         <a href="../index.html"> Volver al Inicio</a>
-
         </center>
         
     </header>
     
-</body>
-<main>
-    <h2>
+
+<main class="main">
+    <div class="texto">
+        <p class="p2">Bienvenidos a un rincón de serenidad y encanto en plena naturaleza! Descubre nuestras acogedoras cabañas, un refugio perfecto donde la comodidad se encuentra con la belleza natural. Sumérgete en un ambiente cálido y relajado mientras exploras las imágenes que capturan la esencia única de nuestras cabañas</p>
+        <p class="p2">A través de estas imágenes, podrás vislumbrar la arquitectura encantadora que se integra armoniosamente con el entorno natural. Desde el interior acogedor hasta los espacios al aire libre que invitan a la contemplación, nuestras cabañas están pensadas para proporcionar una escapada única.</p>
+    </div>
+</main>
+
+<aside class="aside">
+    <h1>Imagenes de Nuestras Cabañas</h1>
         <ul>
             <li>
-                <h3 class="p1 ">Cocina</h3>
+                <h2 class="p1 ">Cocina</h2>
             </li>
         </ul>
         <table>
-            <tr>
+             <tr>
                 <td> <img src="./imagenes/WhatsApp Image 2023-10-08 at 20.50.17-3.jpeg" alt="Cocina" width="100p"></td>
-                <td> <img src="./WhatsApp Image 2023-10-08 at 20.50.16.jpeg" alt="Cocina" width="100p"></li></td>
+                <td> <img src="./imagenes/WhatsApp Image 2023-10-08 at 20.50.16.jpeg" alt="Cocina" width="100p"></td>
+                
             </tr>
         </table>
         <ul>
@@ -58,16 +82,28 @@
             </li>
         </ul>
         <table>
-            <tr>
+        
+          <tr>          
                 <td> <img src="./imagenes/WhatsApp Image 2023-10-08 at 20.50.18-2.jpeg" alt="Cocina" width="100p"> </td>
                 <td> <img src="./imagenes/WhatsApp Image 2023-10-08 at 20.50.19-2.jpeg" alt="Cocina" width="100p"> </td>
-            </tr>
+                
+            </tr>  
         </table>
             
         </ul>
-    </h2>
-</main>
-<footer>
-    <h4>footer</h4>
-</footer>
+    
+</aside>
+
+<footer class="footer">
+    <div class="autor">
+        <h4>Redes Sociales</h4>
+     </div>
+    <div class="redes">
+        <a href=""><img class="redes" src="./imagenes/face.png" alt="logo facebook"></a>
+    </div>
+
+   </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
