@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(195, 202, 192);
+    background-color: colo-fondo-body;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(../imagenes/green-color-gradient-liquid-background-presentation-background-design-suitable-for-website-opening-presentation-background-backdrop-wallpaper-etc-free-photo.jpg);
     flex-direction: column;
@@ -14,20 +14,30 @@ body {
         text-align: center;
     }
 }
+@mixin estilo-imagen($ancho, $altura, $borde) {
+    width: $ancho;
+    height: $altura;
+    border: $borde;
+}
 
 .foto1 {
-    width: 50px;
+    @include estilo-imagen(50px, auto, none); 
 }
 
 .foto2 {
-    width: 200px;
+    @include estilo-imagen(200px, auto, none);
     line-height: 2;
     padding: 1;
 }
 
+@mixin estilo-texto($tamano, $color, $alineacion) {
+    font-size: $tamano;
+    color: $color;
+    text-align: $alineacion;
+}
+
 .p1 {
-    color: rgb(2, 2, 4);
-    font-size: 20px;
+    @include estilo-texto(20px, rgb(2, 2, 4), left);
     list-style: none;
 }
 
@@ -43,11 +53,11 @@ body {
 }
 
 nav {
-    width: 90%;
+    width: $ancho-menu;
     height: 100%;
     margin: 0 auto;
-    background-color: darkgreen;
-    border-radius: 10px;
+    background-color: $color-fondo-nav;
+    border-radius: $border-radius;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,17 +65,17 @@ nav {
     ul {
         list-style: none;
         display: flex;
-        padding: 10px;
+        padding: $padding-menu;
 
         a {
-            color: black;
+            color: $color-enlace;
             text-decoration: none;
             padding: 0.7rem;
 
             &:hover {
-                background-color: black;
-                color: lawngreen;
-                border-radius: 20px;
+                background-color: $color-fondo-header;
+                color: $color-enlace-hover;
+                border-radius:$border-radius;
             }
         }
     }
@@ -198,3 +208,25 @@ nav {
         }
     }
 }
+.miFormulario {
+}
+   
+    div {
+        margin-bottom: 10px; 
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px; 
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%; 
+        padding: 8px;
+        margin-bottom: 10px; 
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }

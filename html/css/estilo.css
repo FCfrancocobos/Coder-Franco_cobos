@@ -209,3 +209,28 @@ nav{
     }
 
 }
+.miFormulario {
+}
+   
+    div {
+        margin-bottom: 10px; /* Espacio entre los divs del formulario */
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px; /* Espacio entre las etiquetas y los inputs */
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%; /* O ajusta el ancho según tu diseño */
+        padding: 8px;
+        margin-bottom: 10px; /* Espacio entre los inputs y selects */
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Resto de los estilos para botones y otros elementos del formulario */
+
